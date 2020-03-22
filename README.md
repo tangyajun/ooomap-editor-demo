@@ -1,13 +1,13 @@
 # ooomap-editor
 this is a 3D indoor and outdoor map editing tools that helps cartographers quickly create and publish 3D maps.
 
-ooomap-editor-demo 主要用来编写ooomap editor使用的示例，包含地图的创建、SDK加载地图及发布地图等，也可参考https://www.ooomap.com官网的示例。
+ooomap-editor-demo 主要用来编写ooomap editor使用的示例，包含地图的创建、SDK加载地图及发布地图等，也可参考https://www.ooomap.com/main/omeditor.html?tag=editor-use&i=0&j=0
 
-一、地图编辑器介绍
+# 一、地图编辑器介绍
 
 随着5G、工业互联网及物联网的发展，我们的身边随处可见三维场景。比如：三维景区园区导览、三维机房监控、VR、AR、三维实景看房等，ooomap editor 的出现解决了制图人员效率低下，3D制图材料资源共享困难及项目中需要使用3D地图，却没有相关的技术储备，投入大量精力去研发3D地图渲染引擎，使得项目的成本和周期无法控制的问题。
 
-二、地图编辑器的优势
+# 二、地图编辑器的优势
 
 1.快速生成3D地图
 
@@ -37,21 +37,55 @@ SDK API 简单，可快速上手实现各种3D效果
 
 将max中做好的地图导入到ooomap editor，然后生成可本地化的.omap文件，使用SDK加载.omap文件
 
+# 三.脚本系统
 
-三、应用案例
+园圈地图编辑器中设计了功能强大, 开发简单灵活的脚本系统, 相比较传统的使用SDK的开发方式, 使用脚本系统可以使开发更具条理性, 并且易于复用和分享
 
-1. 手绘图案例
+# 脚本系统特点
+
+使用 es6 语法
+
+一个脚本文件中对应着一个同名的 class
+
+全局变量:
+
+地图对象: map
+
+场景对象: scene
+
+内置的事件方法:
+
+constructor: es6 类的构造方法, 在这里面, 可以创建一些在脚本运行过程中, 需要用于的变量, 注意: 此时 this.node 为空
+
+start: 当脚本第一次挂载上结点上时运行, 一般用于初始化
+
+update(delta): 地图渲染时每一帧的回调方法, delta为与上一帧的时间间隔(毫秒数)
+
+picked: 结点被点击时的回调方法
+
+doubleClicked: 结点被双击时的回调方法
+
+longPressed: 结点被长按时的回调方法
+
+inView: 当结点对象进入视图范围时的回调方法
+
+outView: 当结点对象离开视图范围时的回调方法
+
+
+# 四、应用案例
+
+# 1. 手绘图案例
 
 ![image](https://github.com/tangyajun/ooomap-editor-demo/blob/master/images/20200322103044.png)
 
-2. 室内地图
+# 2. 室内地图
 
 ![image](https://github.com/tangyajun/ooomap-editor-demo/blob/master/images/20200322103152.png)
 
-3. 室内外一体化
+# 3. 室内外一体化
 
 ![image](https://github.com/tangyajun/ooomap-editor-demo/blob/master/images/20200322103246.png)
 
-四、编辑器操作视频
+# 五、编辑器操作视频
 
-[![Watch the video]](https://www.ooomap.com/main/assets/videos/overview.mp4)
+[![asciicast](https://github.com/tangyajun/ooomap-editor-demo/blob/master/images/20200322105136.png)](https://www.ooomap.com/main/assets/videos/overview.mp4)
