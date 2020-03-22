@@ -71,6 +71,92 @@ inView: 当结点对象进入视图范围时的回调方法
 
 outView: 当结点对象离开视图范围时的回调方法
 
+![image](https://github.com/tangyajun/ooomap-editor-demo/blob/master/images/script.png)
+
+# 脚本示例代码-浮动效果
+
+这段脚本的效果是, 可以让绑定的结点做上下浮动的效果
+
+/** 
+* ooomap 地图脚本 
+* 全局对象: map, scene 
+* 访问脚本绑定的 OMNode 对象: this.node
+*/ 
+class UpAndDown extends om.OMScript { 
+
+    constructor() { 
+        super(); 
+
+        // 计数 count
+        this.cnt = Math.random() * 3;
+
+    }
+
+    // 在地图的每帧运行 
+    update(delta) { 
+        this.cnt += delta * 3;
+        this.node.entity.position.z = Math.sin(this.cnt) * 5 + 10;
+    }
+
+}
+
+#效果演示:
+
+![image](https://github.com/tangyajun/ooomap-editor-demo/blob/master/images/updown.gif)
+
+# 脚本示例代码-全局脚本
+
+脚本对像一般是挂载到某一个结点上的, 如果想对地图中整体的一类结点进行一些操作, 可以使用全局脚本
+
+全局脚本特点:
+
+代码一般放到 start 方法里
+
+脚本挂载在 地图场景(scene) 上
+
+/** 
+* ooomap 地图脚本 
+* 全局对象: map, scene 
+* 访问脚本绑定的 OMNode 对象: this.node
+*/ 
+class Init extends om.OMScript { 
+
+    constructor() { 
+        super();  
+    }
+
+    // 当脚本添加到结点上时运行 
+    start() { 
+
+        // 为 map 对象添加事件处理方法
+        map.on('picked', res => {
+
+            // 如果是空点击
+            if (!res.node) {
+                return;
+            }
+
+            // 如果点击的是体块对象
+            if (res.node.type === 'OMBlock') {
+
+                res.node.flashHeight();
+
+            } else if (res.node.type === 'SpriteMarkerNode') {
+
+                // 如果点击的是 POI标注对象
+                res.node.flash();
+
+            }
+
+        })
+
+    }
+}
+
+# 效果演示
+
+![image](https://github.com/tangyajun/ooomap-editor-demo/blob/master/images/globalScript.gif)
+
 
 # 四、应用案例
 
