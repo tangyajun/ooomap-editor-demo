@@ -1,4 +1,4 @@
-# ooomap-editor.github.io
+# ooomap-editor
 this is a 3D indoor and outdoor map editing tools that helps cartographers quickly create and publish 3D maps.
 ooomap 地图编辑器使用实例，主要包含地图的创建、SDK加载地图及发布地图
 1.地图编辑器产生背景
