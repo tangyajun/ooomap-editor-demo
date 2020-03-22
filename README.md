@@ -54,4 +54,4 @@ SDK API 简单，可快速上手实现各种3D效果
 
 四、编辑器操作视频
 
-[![Watch the video]
+[![Watch the video]](https://www.ooomap.com/main/assets/videos/overview.mp4)
