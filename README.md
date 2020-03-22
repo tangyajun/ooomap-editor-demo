@@ -172,11 +172,11 @@ class Init extends om.OMScript {
 
 ![image](https://github.com/tangyajun/ooomap-editor-demo/blob/master/images/20200322103044.png)
 
-## 2. 室内地图
+## 2. 室内地图案例
 
 ![image](https://github.com/tangyajun/ooomap-editor-demo/blob/master/images/20200322103152.png)
 
-## 3. 室内外一体化
+## 3. 室内外一体化案例
 
 ![image](https://github.com/tangyajun/ooomap-editor-demo/blob/master/images/20200322103246.png)
 
