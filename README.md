@@ -44,3 +44,9 @@ SDK API 简单，可快速上手实现各种3D效果
 
 ![image](https://github.com/tangyajun/ooomap-editor-demo/blob/master/images/20200322103044.png)
 
+2. 室内地图
+
+![image](https://github.com/tangyajun/ooomap-editor-demo/blob/master/images/20200322103152.png)
+
+
+
