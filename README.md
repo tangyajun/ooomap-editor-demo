@@ -56,4 +56,4 @@ SDK API 简单，可快速上手实现各种3D效果
 
 # 五、编辑器操作视频
 
-[![Watch the video]https://github.com/tangyajun/ooomap-editor-demo/blob/master/images/20200322105136.png](https://www.ooomap.com/main/assets/videos/overview.mp4)
+[![asciicast](https://github.com/tangyajun/ooomap-editor-demo/blob/master/images/20200322105136.png)](https://www.ooomap.com/main/assets/videos/overview.mp4)
