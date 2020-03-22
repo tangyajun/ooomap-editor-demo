@@ -37,11 +37,11 @@ SDK API 简单，可快速上手实现各种3D效果
 
 将max中做好的地图导入到ooomap editor，然后生成可本地化的.omap文件，使用SDK加载.omap文件
 
-# 三.脚本系统
+# 三、脚本系统
 
 园圈地图编辑器中设计了功能强大, 开发简单灵活的脚本系统, 相比较传统的使用SDK的开发方式, 使用脚本系统可以使开发更具条理性, 并且易于复用和分享
 
-# 脚本系统特点
+## 脚本系统特点
 
 使用 es6 语法
 
@@ -73,10 +73,11 @@ outView: 当结点对象离开视图范围时的回调方法
 
 ![image](https://github.com/tangyajun/ooomap-editor-demo/blob/master/images/script.png)
 
-# 脚本示例代码-浮动效果
+## 脚本示例代码-浮动效果
 
 这段脚本的效果是, 可以让绑定的结点做上下浮动的效果
 
+```
 /** 
 * ooomap 地图脚本 
 * 全局对象: map, scene 
@@ -99,12 +100,13 @@ class UpAndDown extends om.OMScript {
     }
 
 }
+```
 
 #效果演示:
 
 ![image](https://github.com/tangyajun/ooomap-editor-demo/blob/master/images/updown.gif)
 
-# 脚本示例代码-全局脚本
+## 脚本示例代码-全局脚本
 
 脚本对像一般是挂载到某一个结点上的, 如果想对地图中整体的一类结点进行一些操作, 可以使用全局脚本
 
@@ -114,6 +116,7 @@ class UpAndDown extends om.OMScript {
 
 脚本挂载在 地图场景(scene) 上
 
+```
 /** 
 * ooomap 地图脚本 
 * 全局对象: map, scene 
@@ -152,27 +155,28 @@ class Init extends om.OMScript {
 
     }
 }
+```
 
-# 效果演示
+## 效果演示
 
 ![image](https://github.com/tangyajun/ooomap-editor-demo/blob/master/images/globalScript.gif)
 
-# 脚本系统视频教程
+## 脚本系统视频教程
 
 [![asciicast](https://github.com/tangyajun/ooomap-editor-demo/blob/master/images/script_video.png)](https://www.ooomap.com/main/assets/videos/script.mp4)
 
 
 # 四、应用案例
 
-# 1. 手绘图案例
+## 1. 手绘图案例
 
 ![image](https://github.com/tangyajun/ooomap-editor-demo/blob/master/images/20200322103044.png)
 
-# 2. 室内地图
+## 2. 室内地图
 
 ![image](https://github.com/tangyajun/ooomap-editor-demo/blob/master/images/20200322103152.png)
 
-# 3. 室内外一体化
+## 3. 室内外一体化
 
 ![image](https://github.com/tangyajun/ooomap-editor-demo/blob/master/images/20200322103246.png)
 
