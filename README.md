@@ -1,7 +1,7 @@
 # ooomap-editor
 this is a 3D indoor and outdoor map editing tools that helps cartographers quickly create and publish 3D maps.
 
-ooomap-editor-demo 主要用来编写ooomap editor使用的示例，包含地图的创建、SDK加载地图及发布地图等，也可参考https://www.ooomap.com官网的示例。
+ooomap-editor-demo 主要用来编写ooomap editor使用的示例，包含地图的创建、SDK加载地图及发布地图等，也可参考https://www.ooomap.com/main/omeditor.html?tag=editor-use&i=0&j=0
 
 一、地图编辑器介绍
 
@@ -12,6 +12,10 @@ ooomap-editor-demo 主要用来编写ooomap editor使用的示例，包含地图
 1.快速生成3D地图
 
 3DMax制图人员可以使用工具导出模型，然后使用导入到ooomap editor中，使用ooomap editor在线编辑地图发布等
+
+# 2.脚本系统
+
+
 
 2.所见即所得
 
@@ -38,20 +42,20 @@ SDK API 简单，可快速上手实现各种3D效果
 将max中做好的地图导入到ooomap editor，然后生成可本地化的.omap文件，使用SDK加载.omap文件
 
 
-三、应用案例
+# 三、应用案例
 
-1. 手绘图案例
+# 1. 手绘图案例
 
 ![image](https://github.com/tangyajun/ooomap-editor-demo/blob/master/images/20200322103044.png)
 
-2. 室内地图
+# 2. 室内地图
 
 ![image](https://github.com/tangyajun/ooomap-editor-demo/blob/master/images/20200322103152.png)
 
-3. 室内外一体化
+# 3. 室内外一体化
 
 ![image](https://github.com/tangyajun/ooomap-editor-demo/blob/master/images/20200322103246.png)
 
-四、编辑器操作视频
+# 四、编辑器操作视频
 
 [![Watch the video]](https://www.ooomap.com/main/assets/videos/overview.mp4)
