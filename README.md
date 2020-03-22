@@ -102,7 +102,7 @@ class UpAndDown extends om.OMScript {
 }
 ```
 
-#效果演示:
+## 效果演示:
 
 ![image](https://github.com/tangyajun/ooomap-editor-demo/blob/master/images/updown.gif)
 
