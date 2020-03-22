@@ -42,5 +42,5 @@ SDK API 简单，可快速上手实现各种3D效果
 
 1. 手绘图案例
 
-https://github.com/tangyajun/ooomap-editor-demo/blob/master/images/20200322103044.png
+![image](https://github.com/tangyajun/ooomap-editor-demo/blob/master/images/20200322103044.png)
 
