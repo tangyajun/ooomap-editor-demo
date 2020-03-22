@@ -11,7 +11,7 @@ ooomap-editor-demo 主要用来编写ooomap editor使用的示例，包含地图
 
 1 快速生成3D地图
 
-3DMax制图人员可以使用工具导出模型，然后使用导入到ooomap editor中，使用ooomap editor在线编辑地图、添加标注、路网等
+3DMax制图人员可以使用工具导出模型，然后使用导入到ooomap editor中，使用ooomap editor在线编辑地图发布等
 
 2 所见即所得
 
@@ -21,7 +21,21 @@ ooomap-editor-demo 主要用来编写ooomap editor使用的示例，包含地图
 
 可以通过编写脚本控制3D场景中的动画效果(Unity 3D中也有)
 
-4 离线地图
+4 地图功能完善
+
+可实现2D/3D 地图编辑、标注、路径规划、定位算法
+
+5 快速上手
+
+SDK API 简单，可快速上手实现各种3D效果
+
+6 插件系统
+
+可以将常用的功能封装成插件，如：界面控件、定位功能等，不需要重复开发，提高开发效率
+
+7 离线地图
+
+将max中做好的地图导入到ooomap editor，然后生成可本地化的.omap文件，使用SDK加载.omap文件
 
 
 
