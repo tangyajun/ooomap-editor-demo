@@ -157,6 +157,10 @@ class Init extends om.OMScript {
 
 ![image](https://github.com/tangyajun/ooomap-editor-demo/blob/master/images/globalScript.gif)
 
+# 脚本系统视频教程
+
+[![asciicast](https://github.com/tangyajun/ooomap-editor-demo/blob/master/images/script_video.png)](https://www.ooomap.com/main/assets/videos/script.mp4)
+
 
 # 四、应用案例
 
