@@ -77,7 +77,7 @@ outView: 当结点对象离开视图范围时的回调方法
 
 这段脚本的效果是, 可以让绑定的结点做上下浮动的效果
 
-```
+```javascript
 /** 
 * ooomap 地图脚本 
 * 全局对象: map, scene 
@@ -116,7 +116,7 @@ class UpAndDown extends om.OMScript {
 
 脚本挂载在 地图场景(scene) 上
 
-```
+```javascript
 /** 
 * ooomap 地图脚本 
 * 全局对象: map, scene 
